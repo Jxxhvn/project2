@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+html{
+    width: 100%;
+    overflow-x: hidden;
+     height: 100vh
+}
+body {
+  font-family: 'Crimson Text', serif;
+  padding: 0;
+  margin: 0;
+}
+header{
+    background: #FAF9F8;
+    height: 100vh;
+}
+.menu{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 10%;
+      padding: 1.5%;
+      
+}    
+.menu h2 {
+    font-size: 36px;
+}
+
+.menu ul{
+    display: flex;
+    gap: 40px;
+    font-size: 32px;
+    list-style: none;
+    text-transform: uppercase;
+}
+.menu ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.description{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+    
+}
+.description h1{
+    display: flex; 
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.description p{
+    font-size: 36px;
+    font-weight: 400;
+}
+.floar {
+    display: inline;
+}
+header div{
+    display: flex;
+    padding: 1% 5%;
+}
+.description button {
+    appearance: none;
+    background-color: #8E9A82;
+    padding: 0 30px;
+    border-radius: 20px;
+    color: #ffff;
+    border: solid 0px;
+    text-align: center;
+}
+.description button:hover{
+    border: solid #565c50 0.1px;
+    background-color: #565c50;
+}
+main h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+}
+main .photo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+main .photo2 img{
+    margin-top: 10px;   
+}
+.photo2{
+    margin-bottom: -10px
+}
+.collection{
+   background: linear-gradient(to bottom, #F1F1F1 0%, #F1F1F1 50%, #DBDBDB 50%, #DBDBDB 100%);
+}
+.collection div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+section h2{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+section p{
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    width: 50%;
+    position: relative;
+    right: -23%;
+    padding: 5%;
+}
+.end_conteiner{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto 1fr;
+    margin: 2% 3%;
+    grid-template-rows: auto auto auto auto;
+    margin-top: -3%;
+}
+footer{
+    background: #FAF9F8;
+}
+.end_conteiner h2{
+    font-size: 40px;
+    padding-left: 5%;
+    align-self: center;
+}
+.end_conteiner p{
+    font-size: 30px;
+}
+.end_conteiner .end_foto{
+    grid-row: 1 / span 4;    
+}
+.end_conteiner img{
+    padding-top: 5%
+}
+.end_conteiner .btn{
+    text-decoration: none;
+    color: #000;
+    border: solid #8E9A82 3px;
+    width: fit-content;
+    font-size: 30px;
+    margin-left: 5%;
+    border-radius: 8px;
+}
+.end_conteiner .btn:hover{
+    background-color: #565c50;
+    border: solid #000 3px;
+    color: white;
+    transition: all 0.3s ease;
+    
+}
+.end_conteiner h2,
+.end_conteiner p,
+.end_conteiner .btn {
+    align-self: start;
+    padding: 0% 5%;
+}
+
+
+.follow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+     background: linear-gradient(to right, #F1F1F1 0%, #F1F1F1 70%, #DBDBDB 30%, #DBDBDB 100%);
+    height: 100vh;
+    
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.follow h2 {
+    font-size: 36px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+.follow form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow input,
+.follow textarea {
+    padding: 10px;
+    font-size: 18px;
+    width: 75%;
+    box-sizing: border-box;
+    resize: none;
+    border: #8E9A82 solid;
+    border-radius: 10px;
+}
+
+.follow button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #8E9A82;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+
+.follow button:hover {
+    background-color: #3e433a;
+    transition: all 0.3s ease;
+}
+
+.follow img {
+    width: 100%;
+    max-width: 500px;
+    justify-self: center;
+}
+@media(max-width: 1600px){
+    .nav.menu{
+        flex-wrap: wrap;
+    }
+    
+    
+}
